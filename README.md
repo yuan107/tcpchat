@@ -1,6 +1,7 @@
 # tcpchat
 
 PROTOCOL:
+
 1. Server waits for first HELO message
 2. Server responds with a 100 message and names the first client "Green Client"
 3. Server and Green Client wait for HELO message from Yellow Client
