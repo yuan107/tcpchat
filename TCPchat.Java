@@ -42,7 +42,7 @@ class TCPchat {
             Socket connectionSocket = welcomeSocket.accept();
             String helloMessage = getString(connectionSocket);
             System.out.println( helloMessage + "\n - " + connectionSocket.getInetAddress().toString());
-            if(helloMessage.substring(0,3).equals("HELO")){
+            if(helloMessage.equals("HELO")){
                 if(green == null && !connectionSocket.getInetAddress().equals(yellow)){
                     System.out.println(connectionSocket.getInetAddress().toString() + " identified as Green Client");
                     green = connectionSocket.getInetAddress();
